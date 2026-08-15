@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Antennae -->
+  <path d="M88,46 Q78,16 50,20" stroke="#cdb898" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <circle cx="47" cy="19" r="8" fill="#ffd98a"/>
+  <path d="M132,46 Q142,16 170,20" stroke="#cdb898" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <circle cx="173" cy="19" r="8" fill="#ffd98a"/>
+  <!-- Head -->
+  <circle cx="110" cy="78" r="44" fill="#d9bd8e"/>
+  <!-- Eyes -->
+  <ellipse cx="94" cy="80" rx="6.5" ry="9" fill="#241a10"/>
+  <circle cx="96.5" cy="76" r="2.4" fill="#fff"/>
+  <ellipse cx="126" cy="80" rx="6.5" ry="9" fill="#241a10"/>
+  <circle cx="128.5" cy="76" r="2.4" fill="#fff"/>
+  <!-- Mouth -->
+  <path d="M96,98 Q110,108 124,98" fill="none" stroke="#241a10" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- Abdomen -->
+  <defs>
+    <linearGradient id="abd" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#c9a868"/>
+      <stop offset="0.55" stop-color="#dcb870"/>
+      <stop offset="0.85" stop-color="#ffd98a"/>
+      <stop offset="1" stop-color="#fff8d0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="110" cy="175" rx="42" ry="58" fill="url(#abd)"/>
+</svg>
