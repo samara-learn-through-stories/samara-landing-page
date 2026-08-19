@@ -450,8 +450,6 @@ export default function App() {
               <br />
               <em>{t("hero.title.2")}</em>
             </h1>
-            <p className="lede">{t("hero.lede")}</p>
-
             <div className="wl">
               <WaitlistCta id="hero" />
             </div>
