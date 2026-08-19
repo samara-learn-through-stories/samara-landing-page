@@ -97,12 +97,12 @@ const dict = {
     "stories.b3.t": "The Lion's Court",
     "stories.b3.alt": "The lion holds court",
 
-    "origin.sub": "the crossroads",
+    "origin.sub": "where stories cross languages",
     "origin.hint": "scroll",
-    "origin.kicker": "Named after the crossroads",
+    "origin.kicker": "Samara",
     "origin.p1":
-      "Samarkand — where the Silk Road met, where stories crossed languages.",
-    "origin.p2": "We named the app after that spirit.",
+      "Named after Samarkand, where the Silk Road carried stories between worlds.",
+    "origin.p2": "We carry Arabic tales to yours.",
 
     "final.title.1": "Be among",
     "final.title.2": "the first.",
@@ -174,12 +174,12 @@ const dict = {
     "stories.b3.t": "La Cour du Lion",
     "stories.b3.alt": "Le lion tient cour",
 
-    "origin.sub": "le carrefour",
+    "origin.sub": "là où les histoires traversent les langues",
     "origin.hint": "défiler",
-    "origin.kicker": "Nommé d'après le carrefour",
+    "origin.kicker": "Samara",
     "origin.p1":
-      "Samarcande — là où la Route de la soie se rencontrait, où les histoires croisaient les langues.",
-    "origin.p2": "Nous avons nommé l'app d'après cet esprit.",
+      "Nommée d'après Samarcande, là où la Route de la soie portait les histoires entre les mondes.",
+    "origin.p2": "Nous portons les contes arabes jusqu'à vous.",
 
     "final.title.1": "Faites partie",
     "final.title.2": "des premiers.",
@@ -251,12 +251,12 @@ const dict = {
     "stories.b3.t": "بلاط الأسد",
     "stories.b3.alt": "الأسد يعقد مجلسه",
 
-    "origin.sub": "الملتقى",
+    "origin.sub": "حيث تعبر القصص بين اللغات",
     "origin.hint": "مرّر",
-    "origin.kicker": "سُمّيت على اسم الملتقى",
+    "origin.kicker": "سمرة",
     "origin.p1":
-      "سمرقند — حيث التقت طريق الحرير، وحيث عبرت القصص بين اللغات.",
-    "origin.p2": "سمّينا التطبيق على روح ذلك المكان.",
+      "سُمّيت على اسم سمرقند، حيث حملت طريق الحرير القصص بين العوالم.",
+    "origin.p2": "نحن نحمل الحكايات العربية إليكم.",
 
     "final.title.1": "كن من",
     "final.title.2": "الأوائل.",
