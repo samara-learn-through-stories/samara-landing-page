@@ -1,4 +1,5 @@
 import { useEffect, useRef, useMemo } from "react";
+import { useLanguage } from "./i18n.jsx";
 
 const ROUTES = [
   "M22,214 C186,168 292,232 500,320",
@@ -34,6 +35,7 @@ const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
 export default function CrossroadsStory() {
+  const { t } = useLanguage();
   const trackRef = useRef(null);
   const mapRef = useRef(null);
   const worldRef = useRef(null);
@@ -200,7 +202,7 @@ export default function CrossroadsStory() {
 
               <div className="xr-name" id="xr-name" ref={nameRef}>
                 <h2>Samara</h2>
-                <div className="xr-sub">the crossroads</div>
+                <div className="xr-sub">{t("origin.sub")}</div>
               </div>
 
               {RIDERS.map((r, i) => (
@@ -219,7 +221,7 @@ export default function CrossroadsStory() {
           </div>
 
           <div className="xr-hint" ref={hintRef}>
-            scroll
+            {t("origin.hint")}
           </div>
         </div>
       </div>
@@ -231,7 +233,7 @@ export default function CrossroadsStory() {
             copyRefs.current[0] = el;
           }}
         >
-          Named after the crossroads
+          {t("origin.kicker")}
         </div>
         <p>
           <span
@@ -240,8 +242,7 @@ export default function CrossroadsStory() {
               copyRefs.current[1] = el;
             }}
           >
-            Samarkand &mdash; where the Silk Road met, where stories crossed
-            languages.
+            {t("origin.p1")}
           </span>
         </p>
         <p className="xr-last">
@@ -251,7 +252,7 @@ export default function CrossroadsStory() {
               copyRefs.current[2] = el;
             }}
           >
-            We named the app after that spirit.
+            {t("origin.p2")}
           </span>
         </p>
         <div
