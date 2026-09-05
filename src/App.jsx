@@ -538,7 +538,7 @@ export default function App() {
                   <div className="a">الوَلَدُ والبَقَّال</div>
                   <div className="t">{t("stories.b1.t")}</div>
                   <div className="m">
-                    {t("stories.meta", { pages: 6, words: 22 })}
+                    {t("stories.meta", { pages: 6, words: 54 })}
                   </div>
                 </div>
               </TiltCard>
@@ -555,7 +555,7 @@ export default function App() {
                   <div className="a">جُحا والشُّرطِيّ</div>
                   <div className="t">{t("stories.b2.t")}</div>
                   <div className="m">
-                    {t("stories.meta", { pages: 6, words: 29 })}
+                    {t("stories.meta", { pages: 6, words: 49 })}
                   </div>
                 </div>
               </TiltCard>
@@ -572,7 +572,7 @@ export default function App() {
                   <div className="a">لا يمدح الأسد إلا أسد</div>
                   <div className="t">{t("stories.b3.t")}</div>
                   <div className="m">
-                    {t("stories.meta", { pages: 9, words: 27 })}
+                    {t("stories.meta", { pages: 9, words: 271 })}
                   </div>
                 </div>
               </TiltCard>
