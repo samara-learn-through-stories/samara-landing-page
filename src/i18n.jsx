@@ -8,8 +8,8 @@ import {
 } from "react";
 
 export const LOCALES = [
-  { id: "en", flag: "🇬🇧", native: "English", dir: "ltr" },
   { id: "fr", flag: "🇫🇷", native: "Français", dir: "ltr" },
+  { id: "en", flag: "🇬🇧", native: "English", dir: "ltr" },
   { id: "ar", flag: "🇸🇦", native: "العربية", dir: "rtl" },
   { id: "es", flag: "🇪🇸", native: "Español", dir: "ltr" },
   { id: "de", flag: "🇩🇪", native: "Deutsch", dir: "ltr" },
@@ -595,10 +595,7 @@ function detectLocale() {
   } catch {
     /* ignore */
   }
-  const nav = (navigator.language || "en").toLowerCase();
-  const prefix = nav.split("-")[0];
-  if (dict[prefix]) return prefix;
-  return "en";
+  return "fr";
 }
 
 const LanguageContext = createContext(null);
