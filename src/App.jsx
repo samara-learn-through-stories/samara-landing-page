@@ -282,7 +282,7 @@ function CardShowcase() {
 
         {freed && (
           <div className="sr-fly">
-            <img src="/yaraa.svg" alt="" width="44" height="44" />
+            <img src="/logo.png" alt="" width="44" height="44" />
           </div>
         )}
       </div>
@@ -364,7 +364,7 @@ function Nav() {
     <nav className={`nav-float${stuck ? " stuck" : ""}`}>
       <div className={`nav-pill${open ? " open" : ""}`}>
         <a href="#" className="nav-brand" onClick={close}>
-          <img src="/yaraa.svg" alt="Yaraa" width="24" height="26" />
+          <img src="/logo.png" alt="Samara" width="26" height="26" />
           <span>Samara</span>
         </a>
         <div className={`nav-links${open ? " open" : ""}`}>
@@ -605,7 +605,7 @@ export default function App() {
         <div className="foot-float">
           <div className="foot-pill">
             <div className="foot-brand">
-              <img src="/yaraa.svg" alt="" width="20" height="22" />
+              <img src="/logo.png" alt="" width="22" height="22" />
               <span>Samara</span>
               <em>سمرة</em>
             </div>

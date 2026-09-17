@@ -357,6 +357,27 @@ footer::before{display:none}
 .foot-sep{width:1px;height:16px;background:rgba(212,192,160,.22);flex:none}
 .foot-tag{margin:0;font-family:'Bodoni Moda',serif;font-style:italic;font-size:13px;color:var(--cream-faint);white-space:nowrap}
 
+/* legal / privacy page */
+.legal-page{min-height:100vh;padding:0 24px 80px;max-width:720px;margin:0 auto}
+.legal-back{display:inline-flex;align-items:center;gap:9px;text-decoration:none;padding:32px 0 40px}
+.legal-back span{font-family:'Bodoni Moda',serif;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
+.legal-article h1{font-family:'Bodoni Moda',serif;font-size:clamp(28px,4vw,40px);font-weight:400;color:var(--cream);margin:0 0 8px;line-height:1.2}
+.legal-updated{font-family:'Bodoni Moda',serif;font-style:italic;font-size:13px;color:var(--cream-faint);margin:0 0 40px}
+.legal-article h2{font-family:'Bodoni Moda',serif;font-size:20px;font-weight:400;color:var(--brass);margin:40px 0 12px;letter-spacing:.02em}
+.legal-article h3{font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:600;color:var(--cream-dim);margin:24px 0 8px;letter-spacing:.04em}
+.legal-article p,.legal-article li{font-family:'Inter Tight',sans-serif;font-size:14.5px;line-height:1.72;color:var(--cream-dim)}
+.legal-article p{margin:0 0 14px}
+.legal-article ul{margin:0 0 16px;padding-left:20px}
+.legal-article li{margin-bottom:6px}
+.legal-article a{color:var(--brass);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(212,192,160,.35)}
+.legal-article a:hover{color:var(--gold);text-decoration-color:var(--gold)}
+.legal-article strong{color:var(--cream);font-weight:600}
+.legal-article table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-family:'Inter Tight',sans-serif;font-size:13.5px}
+.legal-article th{text-align:left;padding:10px 14px;color:var(--brass);font-weight:600;border-bottom:1px solid rgba(212,192,160,.22);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.legal-article td{padding:10px 14px;color:var(--cream-dim);border-bottom:1px solid rgba(212,192,160,.08);line-height:1.5}
+.legal-footer{margin-top:60px;padding-top:24px;border-top:1px solid rgba(212,192,160,.12)}
+.legal-footer p{font-family:'Bodoni Moda',serif;font-style:italic;font-size:13px;color:var(--cream-faint);margin:0}
+
 @media(max-width:880px){
   .split{grid-template-columns:1fr;gap:44px}
   .method{padding-top:88px;padding-bottom:72px}
@@ -394,10 +415,10 @@ footer::before{display:none}
   .fc-scene{width:220px;height:290px}
 
   .xr-track{height:260vh}
-  .xr-map{width:min(100vw - 28px,1000px);height:min(52dvh,360px)}
+  .xr-map{width:min(100vw - 28px,1000px);height:min(68dvh,480px)}
   .xr-rider b{font-size:28px}
-  .xr-name h2{font-size:72px}
-  .xr-sub{font-size:13px;letter-spacing:.28em;margin-top:12px}
+  .xr-name h2{font-size:clamp(56px, 14vw, 96px)}
+  .xr-sub{font-size:14px;letter-spacing:.28em;margin-top:12px}
   .xr-fade-top{height:min(28vh,200px)}
   .xr-fade-bot{height:min(30vh,220px)}
   .xr-copy{padding:6vh 22px 8vh}
