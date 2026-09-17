@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import CrossroadsStory from "./CrossroadsStory.jsx";
+import Footer from "./Footer.jsx";
 import { LOCALES, useLanguage } from "./i18n.jsx";
 
 const GLOSSARY = {
@@ -19,26 +20,6 @@ const GLOSSARY = {
 
 const TALLY_URL = `https://tally.so/r/${import.meta.env.VITE_TALLY_FORM_ID || "EkVqAX"}`;
 
-function FooterLangPicker() {
-  const { locale, setLocale } = useLanguage();
-
-  return (
-    <div className="foot-lang">
-      <select
-        className="foot-lang-select"
-        value={locale}
-        onChange={(e) => setLocale(e.target.value)}
-        aria-label="Language"
-      >
-        {LOCALES.map((l) => (
-          <option key={l.id} value={l.id}>
-            {l.flag}  {l.native}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-}
 
 function WaitlistCta({ id }) {
   const { t } = useLanguage();
@@ -601,21 +582,7 @@ export default function App() {
         </div>
       </section>
 
-      <footer>
-        <div className="foot-float">
-          <div className="foot-pill">
-            <div className="foot-brand">
-              <img src="/logo.png" alt="" width="22" height="22" />
-              <span>Samara</span>
-              <em>سمرة</em>
-            </div>
-            <div className="foot-sep" aria-hidden="true" />
-            <p className="foot-tag">{t("footer.tag")}</p>
-            <div className="foot-sep" aria-hidden="true" />
-            <FooterLangPicker />
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from "./Footer.jsx";
 import { useLanguage } from "./i18n.jsx";
 
 export default function PrivacyPolicy() {
@@ -5,25 +6,25 @@ export default function PrivacyPolicy() {
   const isFr = locale === "fr";
 
   return (
-    <div className="legal-page">
-      <a href="/" className="legal-back">
-        <img src="/logo.png" alt="Samara" width="22" height="22" />
-        <span>Samara</span>
-      </a>
+    <>
+      <div className="legal-page">
+        <a href="/" className="legal-back">
+          <img src="/logo.png" alt="Samara" width="22" height="22" />
+          <span>Samara</span>
+        </a>
 
-      <article className="legal-article">
-        <h1>{isFr ? "Politique de confidentialite" : "Privacy Policy"}</h1>
-        <p className="legal-updated">
-          {isFr ? "Derniere mise a jour : 17 septembre 2026" : "Last updated: September 17, 2026"}
-        </p>
+        <article className="legal-article">
+          <h1>{isFr ? "Politique de confidentialite" : "Privacy Policy"}</h1>
+          <p className="legal-updated">
+            {isFr ? "Derniere mise a jour : 17 septembre 2026" : "Last updated: September 17, 2026"}
+          </p>
 
-        {isFr ? <ContentFr /> : <ContentEn />}
-      </article>
+          {isFr ? <ContentFr /> : <ContentEn />}
+        </article>
+      </div>
 
-      <footer className="legal-footer">
-        <p>Samara Stories &middot; contact@samara-stories.app</p>
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
 }
 

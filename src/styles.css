@@ -358,7 +358,7 @@ footer::before{display:none}
 .foot-tag{margin:0;font-family:'Bodoni Moda',serif;font-style:italic;font-size:13px;color:var(--cream-faint);white-space:nowrap}
 
 /* legal / privacy page */
-.legal-page{min-height:100vh;padding:0 24px 80px;max-width:720px;margin:0 auto}
+.legal-page{min-height:100vh;padding:0 24px 0;max-width:720px;margin:0 auto}
 .legal-back{display:inline-flex;align-items:center;gap:9px;text-decoration:none;padding:32px 0 40px}
 .legal-back span{font-family:'Bodoni Moda',serif;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
 .legal-article h1{font-family:'Bodoni Moda',serif;font-size:clamp(28px,4vw,40px);font-weight:400;color:var(--cream);margin:0 0 8px;line-height:1.2}
@@ -375,9 +375,6 @@ footer::before{display:none}
 .legal-article table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-family:'Inter Tight',sans-serif;font-size:13.5px}
 .legal-article th{text-align:left;padding:10px 14px;color:var(--brass);font-weight:600;border-bottom:1px solid rgba(212,192,160,.22);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .legal-article td{padding:10px 14px;color:var(--cream-dim);border-bottom:1px solid rgba(212,192,160,.08);line-height:1.5}
-.legal-footer{margin-top:60px;padding-top:24px;border-top:1px solid rgba(212,192,160,.12)}
-.legal-footer p{font-family:'Bodoni Moda',serif;font-style:italic;font-size:13px;color:var(--cream-faint);margin:0}
-
 @media(max-width:880px){
   .split{grid-template-columns:1fr;gap:44px}
   .method{padding-top:88px;padding-bottom:72px}
