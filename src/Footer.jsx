@@ -1,43 +1,21 @@
-import { LOCALES, useLanguage } from "./i18n.jsx";
-
-function FooterLangPicker() {
-  const { locale, setLocale } = useLanguage();
-
-  return (
-    <div className="foot-lang">
-      <select
-        className="foot-lang-select"
-        value={locale}
-        onChange={(e) => setLocale(e.target.value)}
-        aria-label="Language"
-      >
-        {LOCALES.map((l) => (
-          <option key={l.id} value={l.id}>
-            {l.flag}  {l.native}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-}
+import { useLanguage } from "./i18n.jsx";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { locale } = useLanguage();
+  const isFr = locale === "fr";
 
   return (
-    <footer>
-      <div className="foot-float">
-        <div className="foot-pill">
-          <div className="foot-brand">
-            <img src="/logo.png" alt="" width="22" height="22" />
-            <span>Samara</span>
-            <em>{"\u0633\u0645\u0631\u0629"}</em>
-          </div>
-          <div className="foot-sep" aria-hidden="true" />
-          <p className="foot-tag">{t("footer.tag")}</p>
-          <div className="foot-sep" aria-hidden="true" />
-          <FooterLangPicker />
-        </div>
+    <footer className="foot">
+      <div className="foot-left">
+        <span className="foot-copy">&copy;2026 built by</span>
+        <img src="/logo.png" alt="Samara" width="18" height="18" className="foot-logo" />
+        <span className="foot-name">Samara</span>
+      </div>
+      <div className="foot-right">
+        <a href="/support">Support</a>
+        <a href="https://www.instagram.com/samarastoriesapp/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@samarastoriesapp" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="/privacy">{isFr ? "Confidentialité" : "Privacy & Terms"}</a>
       </div>
     </footer>
   );

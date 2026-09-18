@@ -37,17 +37,18 @@ const dict = {
     "nav.method": "Method",
     "nav.stories": "Stories",
     "nav.origin": "Origin",
-    "nav.cta": "Join the first circle",
+    "nav.cta": "Join the waitlist",
     "nav.menu": "Menu",
     "nav.lang": "Language",
 
-    "hero.title.1": "Read Arabic tales.",
-    "hero.title.2": "Learn new words.",
+    "hero.title.1": "Grow your Arabic\nvocabulary through",
+    "hero.title.2": "stories",
+    "hero.title.2ar": "حكايات",
     "hero.lede":
-      "Illustrated tales. Tap any word to save it. Master it in five days.",
-    "hero.badge": "100 spots open — first circle closes soon",
-    "hero.cta": "Join the first circle",
-    "hero.note": "100 spots available.",
+      "Read, understand and memorize Arabic\nthrough stories that matter.",
+    "hero.cta": "Join the waitlist",
+    "hero.note": "",
+    "hero.quote": "Small steps\nfor great horizons.",
     "final.note": "No spam. One email when you're in.",
 
     "method.kicker": "the method",
@@ -108,23 +109,26 @@ const dict = {
     "final.title.2": "the first.",
 
     "footer.tag": "learn Arabic through stories",
+    "footer.support": "Support",
+    "footer.privacy": "Privacy",
   },
 
   fr: {
     "nav.method": "Méthode",
     "nav.stories": "Histoires",
     "nav.origin": "Origine",
-    "nav.cta": "Accès anticipé",
+    "nav.cta": "Rejoindre la liste",
     "nav.menu": "Menu",
     "nav.lang": "Langue",
 
-    "hero.title.1": "Lisez des contes arabes.",
-    "hero.title.2": "Apprenez de nouveaux mots.",
+    "hero.title.1": "Enrichis ton vocabulaire\nen arabe au fil des",
+    "hero.title.2": "histoires",
+    "hero.title.2ar": "حكايات",
     "hero.lede":
-      "Des contes illustrés. Touchez un mot pour le garder. Maîtrisez-le en cinq jours.",
-    "hero.badge": "100 places ouvertes — le premier cercle ferme bientôt",
-    "hero.cta": "Rejoindre le premier cercle",
-    "hero.note": "100 places disponibles.",
+      "Lisez, comprenez et mémorisez l'arabe\nà travers des récits qui ont du sens.",
+    "hero.cta": "Rejoindre la liste",
+    "hero.note": "",
+    "hero.quote": "De petits pas\npour de grands horizons.",
     "final.note": "Pas de spam. Un e-mail quand c'est votre tour.",
 
     "method.kicker": "la méthode",
@@ -185,6 +189,8 @@ const dict = {
     "final.title.2": "des premiers.",
 
     "footer.tag": "apprendre l'arabe par les histoires",
+    "footer.support": "Support",
+    "footer.privacy": "Confidentialité",
   },
 
   ar: {
@@ -262,6 +268,8 @@ const dict = {
     "final.title.2": "الأوائل.",
 
     "footer.tag": "تعلّم العربية عبر القصص",
+    "footer.support": "الدعم",
+    "footer.privacy": "الخصوصية",
   },
 
   es: {
