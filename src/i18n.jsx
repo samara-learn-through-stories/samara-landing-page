@@ -103,7 +103,6 @@ const dict = {
     "origin.kicker": "Samara",
     "origin.p1":
       "Named after Samarkand, where the Silk Road carried stories between worlds.",
-    "origin.p2": "We carry Arabic tales to yours.",
 
     "final.title.1": "Be among",
     "final.title.2": "the first.",
@@ -183,7 +182,6 @@ const dict = {
     "origin.kicker": "Samara",
     "origin.p1":
       "Nommée d'après Samarcande, là où la Route de la soie portait les histoires entre les mondes.",
-    "origin.p2": "Nous portons les contes arabes jusqu'à vous.",
 
     "final.title.1": "Faites partie",
     "final.title.2": "des premiers.",
@@ -262,7 +260,6 @@ const dict = {
     "origin.kicker": "سمرة",
     "origin.p1":
       "سُمّيت على اسم سمرقند، حيث حملت طريق الحرير القصص بين العوالم.",
-    "origin.p2": "نحن نحمل الحكايات العربية إليكم.",
 
     "final.title.1": "كن من",
     "final.title.2": "الأوائل.",

@@ -74,7 +74,9 @@ export default function CrossroadsStory() {
     fit();
     window.addEventListener("resize", fit);
 
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     let raf = 0;
 
     if (reduced) {
@@ -132,7 +134,8 @@ export default function CrossroadsStory() {
           name.style.setProperty("--ns", 0.94 + nm * 0.06);
         }
         if (hub) hub.style.opacity = 1 - nm * 0.55;
-        if (hintRef.current) hintRef.current.style.opacity = p > 0.04 ? 0 : 0.55;
+        if (hintRef.current)
+          hintRef.current.style.opacity = p > 0.04 ? 0 : 0.55;
 
         raf = requestAnimationFrame(frame);
       };
@@ -243,16 +246,6 @@ export default function CrossroadsStory() {
             }}
           >
             {t("origin.p1")}
-          </span>
-        </p>
-        <p className="xr-last">
-          <span
-            className="xr-ln"
-            ref={(el) => {
-              copyRefs.current[2] = el;
-            }}
-          >
-            {t("origin.p2")}
           </span>
         </p>
         <div

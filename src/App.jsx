@@ -511,7 +511,6 @@ export default function App() {
           <RevealWrap>
             <div className="kicker">{t("origin.kicker")}</div>
             <p className="origin-body">{t("origin.p1")}</p>
-            <p className="origin-body">{t("origin.p2")}</p>
           </RevealWrap>
         </div>
       </section>
