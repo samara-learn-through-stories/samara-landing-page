@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
 import App from "./App.jsx";
 import PrivacyPolicy from "./PrivacyPolicy.jsx";
 import Support from "./Support.jsx";
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LanguageProvider>
       <Page />
+      <Analytics />
     </LanguageProvider>
   </StrictMode>,
 );
