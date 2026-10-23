@@ -18,6 +18,7 @@ const GLOSSARY = {
 };
 
 const TALLY_URL = `https://tally.so/r/${import.meta.env.VITE_TALLY_FORM_ID || "EkVqAX"}`;
+const APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6798348257?pt=129269666&ct=landingpage&mt=8";
 
 
 function WaitlistCta({ id }) {
@@ -26,7 +27,7 @@ function WaitlistCta({ id }) {
     <>
       <a
         className="wl-cta"
-        href={TALLY_URL}
+        href={APP_STORE_URL}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -346,7 +347,7 @@ function Nav() {
           </a>
         </div>
         <a
-          href={TALLY_URL}
+          href={APP_STORE_URL}
           className="nav-cta"
           target="_blank"
           rel="noopener noreferrer"
@@ -394,15 +395,15 @@ export default function App() {
               ))}
             </p>
             <div className="hero-actions">
-              <a className="hero-cta" href={TALLY_URL} target="_blank" rel="noopener noreferrer">
+              <a className="hero-cta" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
                 {t("hero.cta")} <span aria-hidden="true">&rarr;</span>
               </a>
               <div className="hero-badges">
-                <div className="store-badge soon" aria-label="App Store">
+                <a className="store-badge" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label="App Store">
                   <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M16.5 20.3c-.9 1.3-1.9 2.6-3.3 2.6-1.5 0-1.9-1-3.6-1s-2.2 1-3.5 1c-1.5.1-2.6-1.4-3.6-2.7C.6 17.3-.5 13.2.8 10.4c.9-1.9 2.5-3.1 4.2-3.1 1.5 0 2.5 1 3.6 1s2-1 3.8-1c1.3 0 2.8.7 3.7 2-3.2 1.8-2.7 6.4.5 7.6-.6 1.6-1.3 3-2.1 4.4zM13.2 4.7C14 3.7 14.5 2.4 14.4 1c-1.3.1-2.8.9-3.7 2-.8.9-1.5 2.3-1.3 3.6 1.4.1 2.9-.7 3.8-1.9z" fill="currentColor"/></svg>
-                  <div><small>{isFr ? "Bientôt sur" : "Coming soon on"}</small><strong>{isFr ? "l'App Store" : "App Store"}</strong></div>
-                </div>
-                <div className="store-badge soon" aria-label="Google Play">
+                  <div><small>{isFr ? "Télécharger sur" : "Download on the"}</small><strong>{isFr ? "l'App Store" : "App Store"}</strong></div>
+                </a>
+                <div className="store-badge soon" aria-label="Google Play — Bientôt disponible">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none"><path d="M.6.4L11.2 11 .6 21.6c-.4-.3-.6-.8-.6-1.4V1.8C0 1.2.2.7.6.4z" fill="#4285F4"/><path d="M14.8 7.5L11.2 11l3.6 3.5 4-2.3c.7-.4.7-1 0-1.4l-4-2.3z" fill="#FBBC04"/><path d="M.6 21.6L11.2 11l3.6 3.5-11.8 6.8c-.4.2-.9.3-1.4.2-.4 0-.7-.3-1-.9z" fill="#EA4335"/><path d="M.6.4C.9.1 1.2 0 1.6 0c.5 0 .9.1 1.2.3l11.8 6.8L11.2 11 .6.4z" fill="#34A853"/></svg>
                   <div><small>{isFr ? "Bientôt sur" : "Coming soon on"}</small><strong>Google Play</strong></div>
                 </div>
