@@ -199,14 +199,27 @@ function ContentFr() {
         de langue. Aucun cookie de tracking ou publicitaire n'est utilise.
       </p>
 
-      <h2>11. Modifications de cette politique</h2>
+      <h2>11. Abonnements et paiements</h2>
+      <p>
+        Samara Stories propose des abonnements auto-renouvelables geres
+        via Apple. Le paiement est preleve sur votre compte iTunes a la
+        confirmation de l'achat. L'abonnement se renouvelle
+        automatiquement sauf si le renouvellement est desactive au moins
+        24 heures avant la fin de la periode en cours. Vous pouvez gerer
+        et annuler vos abonnements dans les Reglages de votre appareil &gt;
+        Apple ID &gt; Abonnements. Les prix sont en euros et peuvent varier
+        selon le pays. Aucun remboursement n'est accorde pour la portion
+        non utilisee d'une periode d'abonnement.
+      </p>
+
+      <h2>12. Modifications de cette politique</h2>
       <p>
         Nous pouvons mettre a jour cette politique de confidentialite. En cas de modification
         substantielle, nous vous informerons via l'application. La date de derniere mise a jour est
         indiquee en haut de cette page.
       </p>
 
-      <h2>12. Contact</h2>
+      <h2>13. Contact</h2>
       <p>
         Pour toute question relative a cette politique ou a vos donnees personnelles :<br />
         <a href="mailto:contact@samara-stories.app">contact@samara-stories.app</a>
@@ -379,13 +392,24 @@ function ContentEn() {
         cookies are used.
       </p>
 
-      <h2>11. Changes to This Policy</h2>
+      <h2>11. Subscriptions and Payments</h2>
+      <p>
+        Samara Stories offers auto-renewable subscriptions managed via Apple.
+        Payment is charged to your iTunes account upon confirmation of purchase.
+        The subscription renews automatically unless auto-renewal is turned off
+        at least 24 hours before the end of the current period. You can manage
+        and cancel your subscriptions in your device Settings &gt; Apple ID &gt;
+        Subscriptions. Prices are in euros and may vary by country. No refund is
+        provided for the unused portion of a subscription period.
+      </p>
+
+      <h2>12. Changes to This Policy</h2>
       <p>
         We may update this privacy policy. In case of substantial changes, we will notify you via
         the app. The last updated date is indicated at the top of this page.
       </p>
 
-      <h2>12. Contact</h2>
+      <h2>13. Contact</h2>
       <p>
         For any questions about this policy or your personal data:<br />
         <a href="mailto:contact@samara-stories.app">contact@samara-stories.app</a>
