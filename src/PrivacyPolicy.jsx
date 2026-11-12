@@ -199,18 +199,44 @@ function ContentFr() {
         de langue. Aucun cookie de tracking ou publicitaire n'est utilise.
       </p>
 
-      <h2>11. Abonnements et paiements</h2>
+      <h2>11. Abonnements auto-renouvelables</h2>
       <p>
-        Samara Stories propose des abonnements auto-renouvelables geres
-        via Apple. Le paiement est preleve sur votre compte iTunes a la
-        confirmation de l'achat. L'abonnement se renouvelle
-        automatiquement sauf si le renouvellement est desactive au moins
-        24 heures avant la fin de la periode en cours. Vous pouvez gerer
-        et annuler vos abonnements dans les Reglages de votre appareil &gt;
-        Apple ID &gt; Abonnements. Les prix sont en euros et peuvent varier
-        selon le pays. Aucun remboursement n'est accorde pour la portion
-        non utilisee d'une periode d'abonnement.
+        Samara Premium est disponible en deux formules :
       </p>
+      <ul>
+        <li><strong>Mensuel</strong> &mdash; abonnement auto-renouvelable facture chaque mois.</li>
+        <li><strong>Annuel</strong> &mdash; abonnement auto-renouvelable facture chaque annee.</li>
+      </ul>
+      <p>
+        Le prix exact est affiche dans l'application en fonction de votre region et de votre devise.
+        Le paiement est preleve sur votre compte Apple ID a la confirmation de l'achat.
+      </p>
+      <ul>
+        <li>
+          Le renouvellement automatique peut etre desactive a tout moment dans
+          Reglages &rarr; Apple ID &rarr; Abonnements sur iOS, au moins 24 heures
+          avant la fin de la periode en cours.
+        </li>
+        <li>
+          Aucun remboursement partiel n'est accorde pour la portion non utilisee
+          de la periode d'abonnement en cas de resiliation, sauf obligation legale.
+        </li>
+        <li>
+          Les demandes de remboursement sont traitees par Apple. En soumettant une
+          demande, vous acceptez que nous puissions partager des informations
+          limitees sur votre achat avec Apple pour faciliter l'examen de la demande
+          (voir notre Politique de confidentialite).
+        </li>
+        <li>
+          Les offres d'essai gratuit (le cas echeant) se convertissent
+          automatiquement en abonnement payant a la fin de la periode d'essai,
+          sauf annulation prealable.
+        </li>
+        <li>
+          Les prix peuvent etre modifies ; vous serez informe a l'avance
+          conformement aux politiques d'Apple.
+        </li>
+      </ul>
 
       <h2>12. Modifications de cette politique</h2>
       <p>
@@ -392,16 +418,41 @@ function ContentEn() {
         cookies are used.
       </p>
 
-      <h2>11. Subscriptions and Payments</h2>
+      <h2>11. Auto-Renewable Subscriptions</h2>
       <p>
-        Samara Stories offers auto-renewable subscriptions managed via Apple.
-        Payment is charged to your iTunes account upon confirmation of purchase.
-        The subscription renews automatically unless auto-renewal is turned off
-        at least 24 hours before the end of the current period. You can manage
-        and cancel your subscriptions in your device Settings &gt; Apple ID &gt;
-        Subscriptions. Prices are in euros and may vary by country. No refund is
-        provided for the unused portion of a subscription period.
+        Samara Premium is available in two plans:
       </p>
+      <ul>
+        <li><strong>Monthly</strong> &mdash; auto-renewing subscription billed every month.</li>
+        <li><strong>Annual</strong> &mdash; auto-renewing subscription billed every year.</li>
+      </ul>
+      <p>
+        The exact price is displayed in the app based on your region and currency.
+        Payment is charged to your Apple ID account at confirmation of purchase.
+      </p>
+      <ul>
+        <li>
+          Auto-renewal can be turned off at any time in Settings &rarr; Apple ID &rarr;
+          Subscriptions on iOS, at least 24 hours before the end of the current period.
+        </li>
+        <li>
+          No partial refund is granted for any unused portion of the subscription
+          period upon cancellation, except as required by law.
+        </li>
+        <li>
+          Refund requests are handled by Apple. When you submit one, you agree that
+          we may share limited information about your purchase with Apple to help
+          review it (see our Privacy Policy).
+        </li>
+        <li>
+          Free trial offers (if any) automatically convert to a paid subscription
+          at the end of the trial unless cancelled before expiry.
+        </li>
+        <li>
+          Prices may change; you will be notified in advance in accordance with
+          Apple's policies.
+        </li>
+      </ul>
 
       <h2>12. Changes to This Policy</h2>
       <p>
