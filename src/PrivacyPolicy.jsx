@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
         <article className="legal-article">
           <h1>{isFr ? "Politique de confidentialite" : "Privacy Policy"}</h1>
           <p className="legal-updated">
-            {isFr ? "Derniere mise a jour : 17 septembre 2026" : "Last updated: September 17, 2026"}
+            {isFr ? "Derniere mise a jour : 13 novembre 2026" : "Last updated: November 13, 2026"}
           </p>
 
           {isFr ? <ContentFr /> : <ContentEn />}
