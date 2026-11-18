@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo, Fragment } from "react";
 import Footer from "./Footer.jsx";
 import { useLanguage } from "./i18n.jsx";
 
@@ -315,6 +315,140 @@ function TiltCard({ children, className = "" }) {
   );
 }
 
+/* ── Why Samara ──────────────────────────────────────── */
+function WhySamara() {
+  const { t } = useLanguage();
+  const features = [
+    { icon: "\u{1F4D6}", key: "f1" },
+    { icon: "\u{1F501}", key: "f2" },
+    { icon: "\u{1F512}", key: "f3" },
+    { icon: "\u{2712}\uFE0F", key: "f4" },
+  ];
+
+  return (
+    <section className="why" id="why">
+      <div className="wrap">
+        <RevealWrap className="center">
+          <div className="kicker">{t("why.kicker")}</div>
+          <h2 className="stitle">{t("why.title")}</h2>
+        </RevealWrap>
+        <div className="why-grid">
+          {features.map((f, i) => (
+            <RevealWrap key={f.key} className="why-card" delay={`${i * 0.08}s`}>
+              <div className="why-icon">{f.icon}</div>
+              <h3 className="why-card-title">{t(`why.${f.key}.title`)}</h3>
+              <p className="why-card-body">{t(`why.${f.key}.body`)}</p>
+            </RevealWrap>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Pricing ─────────────────────────────────────────── */
+function Pricing() {
+  const { t } = useLanguage();
+  const rows = ["stories", "training", "memorised", "sr"];
+
+  return (
+    <section className="pricing" id="pricing">
+      <div className="wrap">
+        <RevealWrap className="center">
+          <div className="kicker">{t("pricing.kicker")}</div>
+          <h2 className="stitle">{t("pricing.title")}</h2>
+        </RevealWrap>
+
+        <RevealWrap>
+          <div className="pricing-table">
+            <div className="pricing-head">
+              <div className="pricing-cell pricing-label" />
+              <div className="pricing-cell pricing-col-free">{t("pricing.free")}</div>
+              <div className="pricing-cell pricing-col-prem">{t("pricing.premium")}</div>
+            </div>
+            {rows.map((r) => (
+              <div className="pricing-row" key={r}>
+                <div className="pricing-cell pricing-label">{t(`pricing.${r}`)}</div>
+                <div className="pricing-cell pricing-val-free">{t(`pricing.${r}.free`)}</div>
+                <div className="pricing-cell pricing-val-prem">{t(`pricing.${r}.premium`)}</div>
+              </div>
+            ))}
+          </div>
+        </RevealWrap>
+
+        <RevealWrap>
+          <div className="pricing-plans">
+            <div className="pricing-plan">
+              <div className="pricing-plan-name">{t("pricing.monthly")}</div>
+              <div className="pricing-plan-price">
+                <span className="pricing-amount">{t("pricing.monthly.price")}&euro;</span>
+                <span className="pricing-unit">{t("pricing.monthly.unit")}</span>
+              </div>
+            </div>
+            <div className="pricing-plan pricing-plan-pop">
+              <div className="pricing-plan-badge">{t("pricing.annual.save")}</div>
+              <div className="pricing-plan-name">{t("pricing.annual")}</div>
+              <div className="pricing-plan-price">
+                <span className="pricing-amount">{t("pricing.annual.price")}&euro;</span>
+                <span className="pricing-unit">{t("pricing.annual.unit")}</span>
+              </div>
+              <div className="pricing-plan-eq">{t("pricing.annual.eq")}</div>
+            </div>
+          </div>
+        </RevealWrap>
+
+        <RevealWrap className="center" style={{ marginTop: 32 }}>
+          <a className="wl-cta" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+            {t("pricing.cta")}
+          </a>
+        </RevealWrap>
+      </div>
+    </section>
+  );
+}
+
+/* ── FAQ ──────────────────────────────────────────────── */
+function Faq() {
+  const { t } = useLanguage();
+  const [openIdx, setOpenIdx] = useState(null);
+  const items = [1, 2, 3, 4, 5, 6];
+
+  return (
+    <section className="faq" id="faq">
+      <div className="wrap">
+        <RevealWrap className="center">
+          <div className="kicker">{t("faq.kicker")}</div>
+          <h2 className="stitle">{t("faq.title")}</h2>
+        </RevealWrap>
+        <div className="faq-list">
+          {items.map((n) => {
+            const isOpen = openIdx === n;
+            return (
+              <RevealWrap key={n} delay={`${(n - 1) * 0.04}s`}>
+                <div className={`faq-item${isOpen ? " open" : ""}`}>
+                  <button
+                    className="faq-q"
+                    onClick={() => setOpenIdx(isOpen ? null : n)}
+                    aria-expanded={isOpen}
+                  >
+                    <span>{t(`faq.q${n}`)}</span>
+                    <span className="faq-chevron" aria-hidden="true" />
+                  </button>
+                  <div className="faq-a-wrap" style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}>
+                    <div className="faq-a-inner">
+                      <p className="faq-a">{t(`faq.a${n}`)}</p>
+                    </div>
+                  </div>
+                </div>
+              </RevealWrap>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Nav() {
   const { t } = useLanguage();
   const [stuck, setStuck] = useState(false);
@@ -339,11 +473,11 @@ function Nav() {
           <a href="#method" onClick={close}>
             {t("nav.method")}
           </a>
-          <a href="#stories" onClick={close}>
-            {t("nav.stories")}
+          <a href="#pricing" onClick={close}>
+            {t("nav.pricing")}
           </a>
-          <a href="#origin" onClick={close}>
-            {t("nav.origin")}
+          <a href="#faq" onClick={close}>
+            FAQ
           </a>
         </div>
         <a
@@ -506,6 +640,12 @@ export default function App() {
         ))}
       </section>
 
+      {/* Why Samara */}
+      <WhySamara />
+
+      {/* Pricing */}
+      <Pricing />
+
       {/* Origin */}
       <section className="origin-simple" id="origin">
         <div className="wrap">
@@ -515,6 +655,9 @@ export default function App() {
           </RevealWrap>
         </div>
       </section>
+
+      {/* FAQ */}
+      <Faq />
 
       {/* Final CTA */}
       <section className="final" id="join">
